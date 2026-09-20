@@ -218,3 +218,144 @@ body {
     font-size: 1.75rem;
   }
 }
+
+/* --- Estilos da Página de Oportunidades --- */
+.page-banner {
+  background: linear-gradient(135deg, #0b5e3f 0%, #06402b 100%);
+  color: #ffffff;
+  text-align: center;
+  padding: 3.5rem 1.5rem 4rem;
+}
+
+.page-banner-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-banner h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.page-banner p {
+  color: #e2e8f0;
+  font-size: 1.05rem;
+}
+
+.opportunities-container {
+  max-width: 1100px;
+  margin: 2.5rem auto 4rem;
+  padding: 0 1.5rem;
+}
+
+.opp-section {
+  margin-bottom: 3.5rem;
+}
+
+.section-header-opp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.section-header-opp h2 {
+  font-size: 1.45rem;
+  color: #0f172a;
+}
+
+.section-header-opp p {
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.btn-group-link {
+  display: inline-block;
+  background-color: #25d366;
+  color: #ffffff;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.btn-group-link:hover {
+  background-color: #1ebc59;
+}
+
+.opp-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.opp-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.opp-card h3 {
+  font-size: 1.15rem;
+  color: #0f172a;
+  margin-bottom: 0.4rem;
+}
+
+.opp-meta {
+  font-size: 0.85rem;
+  color: #0b5e3f;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.opp-card p {
+  font-size: 0.9rem;
+  color: #475569;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+/* Tags de Destaque */
+.opp-tag {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.tag-vaga {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.tag-curso {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.tag-concurso {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .section-header-opp {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
