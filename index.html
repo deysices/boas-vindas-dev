@@ -7,25 +7,93 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <h1>Boas-Vindas Dev</h1>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="tutoriais.html">Tutoriais</a></li>
-        <li><a href="oportunidades.html">Vagas & Cursos</a></li>
-      </ul>
-    </nav>
+
+  <!-- Cabeçalho de Navegação -->
+  <header class="header">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-bold">Boas-Vindas</span> Dev
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Início</a></li>
+          <li><a href="tutoriais.html">Tutoriais</a></li>
+          <li><a href="oportunidades.html">Oportunidades</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
+    <!-- Seção Principal (Hero) -->
     <section class="hero">
-      <h2>Acolhimento e Orientação em Tecnologia</h2>
-      <p>Guia prático para novos estudantes de ADS e comunidade de TI.</p>
-      <a href="https://chat.whatsapp.com/SEU_LINK_AQUI" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">Entrar na Comunidade WhatsApp</a>
+      <div class="hero-content">
+        <span class="badge">Projeto de Extensão ADS • Unifametro</span>
+        <h1>Acelere sua adaptação acadêmica e sua carreira em TI</h1>
+        <p>Guias simples para as plataformas da faculdade e canais exclusivos no WhatsApp para networking, cursos gratuitos e vagas na área.</p>
+        <!-- Cole o link geral da Comunidade aqui -->
+        <a href="COLE_AQUI_O_LINK_DA_COMUNIDADE_GERAL" class="btn-principal" target="_blank" rel="noopener noreferrer">
+          Entrar na Comunidade Geral
+        </a>
+      </div>
+    </section>
+
+    <!-- Seção de Canais Segmentados do WhatsApp -->
+    <section class="community-section">
+      <div class="section-title">
+        <h2>Escolha os grupos do seu interesse</h2>
+        <p>Acesse apenas os temas que fazem sentido para você e evite excesso de mensagens.</p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- Card 1: Avisos -->
+        <div class="card">
+          <div class="card-icon">📢</div>
+          <h3>Avisos & Tutoriais</h3>
+          <p>Canal oficial e silencioso. Receba resumos de prazos acadêmicos, tutoriais rápidos e comunicados da equipe.</p>
+          <a href="https://chat.whatsapp.com/Cw2mp6Wvm6T9jdS2gYWA7n" class="btn-card btn-outline" target="_blank" rel="noopener noreferrer">Acessar Canal</a>
+        </div>
+
+        <!-- Card 2: Dúvidas -->
+        <div class="card">
+          <div class="card-icon">💬</div>
+          <h3>Geral</h3>
+          <p>Tire dúvidas sobre salas de aula, uso do Moodle/Portal e troque ideias diretamente com outros estudantes de ADS.</p>
+          <a href="https://chat.whatsapp.com/LXn0ceqZtNj4YwIMMxGV8k" class="btn-card" target="_blank" rel="noopener noreferrer">Entrar no Grupo</a>
+        </div>
+
+        <!-- Card 3: Vagas -->
+        <div class="card">
+          <div class="card-icon">💼</div>
+          <h3>Vagas TI</h3>
+          <p>Curadoria de oportunidades de estágio e posições júnior em desenvolvimento, dados e infraestrutura.</p>
+          <a href="https://chat.whatsapp.com/GnmyAMjtUyA5KpkYH7Mi5i" class="btn-card" target="_blank" rel="noopener noreferrer">Ver Vagas</a>
+        </div>
+
+        <!-- Card 4: Cursos -->
+        <div class="card">
+          <div class="card-icon">🎓</div>
+          <h3>Cursos & Certificados</h3>
+          <p>Bootcamps, workshops e cursos gratuitos recomendados para enriquecer seu currículo e abater horas complementares.</p>
+          <a href="https://chat.whatsapp.com/CPEL64iT7CJGFEAsmtBszH" class="btn-card" target="_blank" rel="noopener noreferrer">Ver Cursos</a>
+        </div>
+
+        <!-- Card 5: Concursos -->
+        <div class="card">
+          <div class="card-icon">🏛️</div>
+          <h3>Concursos TI</h3>
+          <p>Acompanhamento de editais públicos, processos seletivos para órgãos estaduais e bancos na área de computação.</p>
+          <a href="https://chat.whatsapp.com/Ky12OfACemiLAG0rvKgKex" class="btn-card" target="_blank" rel="noopener noreferrer">Acessar Editais</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <script src="assets/js/script.js"></script>
+  <!-- Rodapé Institucional -->
+  <footer class="footer">
+    <p><strong>Boas-Vindas Dev</strong> • Centro Universitário Fametro (Unifametro)</p>
+    <p>Projeto de Extensão Curricular | Prática Profissional e Gestão • 2026.2</p>
+  </footer>
+
 </body>
 </html>
