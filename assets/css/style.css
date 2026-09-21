@@ -467,3 +467,43 @@ body {
   color: #10b981;
   font-weight: bold;
 }
+
+/* --- Interatividade JS --- */
+.tutorial-closed {
+  display: none !important;
+}
+
+.tutorial-header::after {
+  content: " ▾";
+  font-size: 1.1rem;
+  color: #10b981;
+}
+
+/* Botão Hambúrguer Mobile */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+    align-self: flex-end;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .nav-links.nav-active {
+    display: flex;
+  }
+}
