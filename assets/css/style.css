@@ -215,13 +215,19 @@ body {
 
 .btn-card {
   display: block;
+  width: 100%;
+  box-sizing: border-box;
   text-align: center;
   background-color: #0b5e3f;
   color: #ffffff;
   padding: 0.65rem 1rem;
   font-weight: 600;
+  font-size: 0.95rem;
+  font-family: inherit;
   text-decoration: none;
+  border: none;
   border-radius: 6px;
+  cursor: pointer;
   transition: background-color 0.2s;
 }
 
@@ -495,6 +501,29 @@ body {
 
 .footer strong {
   color: #f8fafc;
+}
+
+/* Padronização do Botão Dicas */
+#btn-outra-dica {
+  width: 100%;
+  display: block;
+  padding: 0.65rem 1rem;
+  box-sizing: border-box;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: inherit;
+  line-height: 1.6;
+  text-align: center;
+  background-color: #0b5e3f;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#btn-outra-dica:hover {
+  background-color: #084931;
 }
 
 /* Responsividade Mobile Consistente */
