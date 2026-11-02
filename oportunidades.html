@@ -9,15 +9,15 @@
 </head>
 <body>
 
-  <!-- Cabeçalho Institucional -->
+  <!-- Cabeçalho com Identidade Clara do Projeto -->
   <header class="header">
-    <!-- <div class="nav-container">
-      <div class="logo"> <button class="nav-toggle" aria-label="Abrir menu">☰</button>
-        <span class="logo-bold">Boas-Vindas</span> Dev
-      </div> -->
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html"><span class="logo-bold">Boas-Vindas</span> Dev</a>
+      </div>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menu de navegação">☰</button>
       <nav>
-        <ul class="nav-links">
+        <ul class="nav-links" id="navLinks">
           <li><a href="index.html">Início</a></li>
           <li><a href="tutoriais.html">Tutoriais</a></li>
           <li><a href="oportunidades.html" class="active">Oportunidades</a></li>
@@ -26,23 +26,23 @@
     </div>
   </header>
 
-  <!-- Banner da Página -->
+  <!-- Banner Institucional -->
   <section class="page-banner">
     <div class="page-banner-content">
-      <span class="badge">Carreira & Capacitação</span>
-      <h1>Central de Oportunidades em TI</h1>
-      <p>Curadoria de vagas de estágio, cursos gratuitos com certificado e editais públicos para impulsionar sua formação desde o primeiro semestre.</p>
+      <span class="badge">Projeto Boas-Vindas Dev • Unifametro</span>
+      <h1>Guia de Plataformas para Carreira e Capacitação</h1>
+      <p>Mapeamento das principais portas de entrada para estágios em TI, bancos de talentos e ecossistemas de cursos livres com certificação gratuita.</p>
     </div>
   </section>
 
   <main class="opportunities-container">
 
-    <!-- SEÇÃO 1: VAGAS DE TI E ESTÁGIO -->
+    <!-- SEÇÃO 1: PLATAFORMAS DE EMPREGABILIDADE E ESTÁGIO -->
     <section class="opp-section" id="vagas">
       <div class="section-header-opp">
         <div>
-          <h2>💼 Vagas de Estágio e Emprego em TI</h2>
-          <p>Oportunidades para ingressantes e posições juniores no ecossistema local e remoto.</p>
+          <h2>💼 Plataformas para Estágio e Primeiro Emprego em TI</h2>
+          <p>Canais oficiais para cadastro de currículo de estudante e busca de vagas locais e remotas.</p>
         </div>
         <a href="https://chat.whatsapp.com/GnmyAMjtUyA5KpkYH7Mi5i" class="btn-group-link" target="_blank" rel="noopener noreferrer">
           Entrar no Grupo de Vagas
@@ -50,38 +50,41 @@
       </div>
 
       <div class="cards-grid">
+        <!-- Card 1: CIEE -->
         <article class="opp-card">
-          <div class="opp-tag tag-vaga">Estágio</div>
-          <h3>Estágio em Suporte & Infraestrutura TI</h3>
-          <p class="opp-meta">Fortaleza - CE • Carga horária: 30h semanais</p>
-          <p>Atuação no auxílio ao suporte ao usuário, configuração de redes locais e manutenção de hardware corporativo.</p>
-          <a href="https://www.linkedin.com/jobs/" class="btn-card" target="_blank" rel="noopener noreferrer">Candidatar-se / Ver Mais</a>
+          <div class="opp-tag tag-vaga">Estágios & Integração</div>
+          <h3>CIEE (Centro de Integração Empresa-Escola)</h3>
+          <p class="opp-meta">Nacional / Fortaleza • Estudantes de Tecnologia</p>
+          <p>Principal agente de integração para contratos formais de estágio. Mantenha seu cadastro e declaração de matrícula atualizados para receber seleções de suporte e desenvolvimento.</p>
+          <a href="https://portal.ciee.org.br/" class="btn-card" target="_blank" rel="noopener noreferrer">Acessar Portal CIEE</a>
         </article>
 
+        <!-- Card 2: IEL Ceará -->
         <article class="opp-card">
-          <div class="opp-tag tag-vaga">Júnior / Trainee</div>
-          <h3>Programa de Estágio Desenvolvedor Front-end</h3>
-          <p class="opp-meta">Remoto ou Híbrido • Carga horária: 30h semanais</p>
-          <p>Oportunidade para quem está iniciando em HTML, CSS, JavaScript e quer aprender metodologias ágeis em equipe.</p>
-          <a href="https://portal.ciee.org.br/" class="btn-card" target="_blank" rel="noopener noreferrer">Candidatar-se / Ver Mais</a>
+          <div class="opp-tag tag-vaga">Indústria & Negócios</div>
+          <h3>IEL Ceará (Instituto Euvaldo Lodi)</h3>
+          <p class="opp-meta">Regional Ceará • Foco no Mercado Local</p>
+          <p>Conecta estudantes do ensino superior a empresas do ecossistema industrial cearense com bolsas de estágio e programas estruturados de desenvolvimento profissional.</p>
+          <a href="https://www.iel-ce.org.br/" class="btn-card" target="_blank" rel="noopener noreferrer">Acessar IEL Ceará</a>
         </article>
 
+        <!-- Card 3: LinkedIn -->
         <article class="opp-card">
-          <div class="opp-tag tag-vaga">Banco de Talentos</div>
-          <h3>Banco de Estágios de TI - Ceará</h3>
-          <p class="opp-meta">Plataformas de Integração (CIEE / IEL Ceará)</p>
-          <p>Cadastre seu currículo de estudante para receber convocações contínuas de empresas parceiras da região.</p>
-          <a href="https://www.iel-ce.org.br/" class="btn-card btn-outline" target="_blank" rel="noopener noreferrer">Acessar Banco de Talentos</a>
+          <div class="opp-tag tag-vaga">Networking & Mercado</div>
+          <h3>LinkedIn Jobs (Vagas de TI)</h3>
+          <p class="opp-meta">Rede Global • Filtro "Estágio" e "Júnior"</p>
+          <p>Plataforma padrão da área de computação. Excelente para seguir recrutadores de tecnologia, criar networking regional e ativar alertas para vagas iniciais de ADS.</p>
+          <a href="https://www.linkedin.com/jobs/" class="btn-card btn-outline" target="_blank" rel="noopener noreferrer">Explorar Vagas no LinkedIn</a>
         </article>
       </div>
     </section>
 
-    <!-- SEÇÃO 2: CURSOS GRATUITOS E CERTIFICAÇÕES -->
+    <!-- SEÇÃO 2: PLATAFORMAS DE CURSOS GRATUITOS -->
     <section class="opp-section" id="cursos">
       <div class="section-header-opp">
         <div>
-          <h2>🎓 Cursos Gratuitos e Horas Complementares</h2>
-          <p>Capacitações abertas de qualidade para turbinar seu portfólio acadêmico e profissional.</p>
+          <h2>🎓 Plataformas de Cursos Gratuitos e Certificados</h2>
+          <p>Ecossistemas abertos para você explorar trilhas, aprender novas linguagens no seu ritmo e emitir certificados.</p>
         </div>
         <a href="https://chat.whatsapp.com/CPEL64iT7CJGFEAsmtBszH" class="btn-group-link" target="_blank" rel="noopener noreferrer">
           Entrar no Grupo de Cursos
@@ -89,27 +92,30 @@
       </div>
 
       <div class="cards-grid">
+        <!-- Card 1: Fundação Bradesco -->
         <article class="opp-card">
-          <div class="opp-tag tag-curso">Gratuito com Certificado</div>
-          <h3>Fundamentos de Programação e Lógica</h3>
-          <p class="opp-meta">Fundação Bradesco • Escola Virtual (Online)</p>
-          <p>Excelente para quem está no 1º ou 2º semestre. Introdução a algoritmos, variáveis e raciocínio computacional.</p>
-          <a href="https://www.ev.org.br/" class="btn-card" target="_blank" rel="noopener noreferrer">Acessar Curso</a>
+          <div class="opp-tag tag-curso">Cursos Básicos & Intermediários</div>
+          <h3>Escola Virtual (Fundação Bradesco)</h3>
+          <p class="opp-meta">Gratuito • Certificação Imediata</p>
+          <p>Ideal para alunos dos primeiros semestres. Oferece cursos de fundamentos de lógica de programação, modelagem de dados, introdução a HTML/CSS e sistemas operacionais.</p>
+          <a href="https://www.ev.org.br/" class="btn-card" target="_blank" rel="noopener noreferrer">Conhecer a Escola Virtual</a>
         </article>
 
+        <!-- Card 2: DIO -->
         <article class="opp-card">
-          <div class="opp-tag tag-curso">Bootcamp Aberto</div>
-          <h3>Bootcamps e Trilha Fullstack / Cloud</h3>
-          <p class="opp-meta">Digital Innovation One (DIO)</p>
-          <p>Cursos práticos com projetos reais, fórum de dúvidas e emissão direta de certificados válidos para atividades complementares.</p>
-          <a href="https://www.dio.me/" class="btn-card" target="_blank" rel="noopener noreferrer">Acessar Plataforma</a>
+          <div class="opp-tag tag-curso">Bootcamps & Projetos</div>
+          <h3>Digital Innovation One (DIO)</h3>
+          <p class="opp-meta">Programas Abertos com Empresas Parceiras</p>
+          <p>Plataforma de aceleração prática que lança bootcamps gratuitos em parceria com grandes corporações (trilhas Fullstack, Nuvem, Inteligência Artificial e Dados com desafios de código).</p>
+          <a href="https://www.dio.me/" class="btn-card" target="_blank" rel="noopener noreferrer">Explorar Bootcamps na DIO</a>
         </article>
 
+        <!-- Card 3: Santander Open Academy -->
         <article class="opp-card">
-          <div class="opp-tag tag-curso">Bolsas & Capacitação</div>
-          <h3>Bolsas Santander Open Academy</h3>
-          <p class="opp-meta">Santander Universidades</p>
-          <p>Programas abertos com vagas em tecnologias de ponta, inteligência artificial, dados e inglês para negócios.</p>
+          <div class="opp-tag tag-curso">Bolsas & Capacitação Global</div>
+          <h3>Santander Open Academy</h3>
+          <p class="opp-meta">Editais de Bolsas 100% Gratuitas</p>
+          <p>Disponibiliza anualmente centenas de bolsas de formação técnica em parceria com instituições de ponta, englobando habilidades digitais, idiomas, tecnologia e liderança.</p>
           <a href="https://app.santanderopenacademy.com/" class="btn-card btn-outline" target="_blank" rel="noopener noreferrer">Ver Editais Abertos</a>
         </article>
       </div>
@@ -119,8 +125,8 @@
     <section class="opp-section" id="concursos">
       <div class="section-header-opp">
         <div>
-          <h2>🏛️ Concursos Públicos e Seleções da Área de TI</h2>
-          <p>Oportunidades em órgãos governamentais, autarquias e empresas estatais de tecnologia.</p>
+          <h2>🏛️ Portais de Editais e Concursos em TI</h2>
+          <p>Acompanhamento de processos seletivos públicos, estágios em órgãos governamentais e certames da área técnica.</p>
         </div>
         <a href="https://chat.whatsapp.com/Ky12OfACemiLAG0rvKgKex" class="btn-group-link" target="_blank" rel="noopener noreferrer">
           Entrar no Grupo de Concursos
@@ -129,32 +135,32 @@
 
       <div class="cards-grid">
         <article class="opp-card">
-          <div class="opp-tag tag-concurso">Estágio Remunerado Público</div>
-          <h3>Seleção de Estágio de TI - Tribunais e Órgãos Estaduais</h3>
+          <div class="opp-tag tag-concurso">Portal Regional</div>
+          <h3>Concursos no Ceará</h3>
           <p class="opp-meta">Fortaleza e Região Metropolitana</p>
-          <p>Processos seletivos semestrais para estudantes de ADS em tribunais (TRE-CE, TRT, TJCE) e ministérios públicos.</p>
-          <a href="https://concursosnobrasil.com/concursos/ce/" class="btn-card" target="_blank" rel="noopener noreferrer">Acompanhar Notícias</a>
+          <p>Centralizador de editais abertos e previstos para prefeituras, autarquias estaduais e processos seletivos de órgãos do Ceará.</p>
+          <a href="https://www.concursosnoceara.com/" class="btn-card" target="_blank" rel="noopener noreferrer">Acompanhar Editais Locais</a>
         </article>
 
         <article class="opp-card">
-          <div class="opp-tag tag-concurso">Carreira Pública</div>
-          <h3>Editais de TI em Bancos e Empresas Públicas</h3>
-          <p class="opp-meta">Nacional / Regional (CE)</p>
-          <p>Informações de preparação para cargos de Técnico de TI e Analista (ex.: Banco do Nordeste, Caixa, Serpro, Dataprev).</p>
-          <a href="https://www.pciconcursos.com.br/" class="btn-card btn-outline" target="_blank" rel="noopener noreferrer">Ver Concursos Abertos</a>
+          <div class="opp-tag tag-concurso">Portal Nacional</div>
+          <h3>PCI Concursos</h3>
+          <p class="opp-meta">Filtro por Região Nordeste e Área de TI</p>
+          <p>Repositório clássico de provas anteriores, apostilas públicas e acompanhamento diário de certames para tribunais, bancos públicos e estatais de computação.</p>
+          <a href="https://www.pciconcursos.com.br/" class="btn-card btn-outline" target="_blank" rel="noopener noreferrer">Pesquisar Concursos de TI</a>
         </article>
       </div>
     </section>
 
   </main>
 
-  <script src="assets/js/script.js"></script>
-
-  <!-- Rodapé Institucional -->
+  <!-- Rodapé com comprovação explícita para evidência da banca -->
   <footer class="footer">
-    <p><strong>Boas-Vindas Dev</strong> • Centro Universitário Fametro (Unifametro)</p>
-    <p>Projeto de Extensão Curricular | Prática Profissional e Gestão • 2026.2</p>
+    <div class="footer-badge">PROJETO DE EXTENSÃO: BOAS-VINDAS DEV</div>
+    <p><strong>Boas-Vindas Dev</strong> • Centro Universitário Fametro (Unifametro)[cite: 1, 12]</p>
+    <p>Curso de Análise e Desenvolvimento de Sistemas (ADS) • IV Simpósio de Extensão 2026.2</p>
   </footer>
 
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

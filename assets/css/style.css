@@ -1,4 +1,75 @@
-* {
+/* Garante que o Logo do Projeto tenha peso e contraste nas evidências */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo a {
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.logo-bold {
+  color: #a7f3d0;
+  font-weight: 800;
+}
+
+/* Identificador explícito do projeto no rodapé para print de evidências */
+.footer-badge {
+  display: inline-block;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  color: #a7f3d0;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+/* Responsividade e Abertura do Menu Hambúrguer */
+@media (max-width: 768px) {
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-toggle {
+    display: block !important;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 6px;
+    font-size: 1.6rem;
+    color: #ffffff;
+    padding: 0.2rem 0.65rem;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #06402b; /* Fundo contrastante */
+    flex-direction: column;
+    padding: 1.25rem;
+    gap: 1rem;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+  }
+
+  .nav-links.nav-active {
+    display: flex !important;
+  }
+}* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
